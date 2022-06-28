@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <article class="container">
+      <header class="header">
+        <img src="/css/img/LOGOME.png" /> <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+      </header>
+      <main class="main">
+        <form name="contact" method="post" data-netlify="true">
+          <h1>CONTACT FORM</h1>
+          <p>
+            <label>Your name:</label>
+            <input name="name" inputmode="text" value="Enter your name here" />
+          </p>
+          <p>
+            <label>Your Email:</label>
+            <input
+              name="email"
+              inputmode="email"
+              value="Enter your Email here"
+            />
+          </p>
+          <p>
+            <label>Your phonenumber:</label>
+            <input name="phonenumber" type="tel" />
+          </p>
+          <p>
+            <label>Your age:</label>
+            <input name="age" type="number" />
+          </p>
+          <p>
+            <label>Date of birth:</label>
+            <input name="DOB" type="date" />
+          </p>
+          <p>
+            <label>Gender:</label>
+            <input name="gender" type="radio" id="male" value="male" />
+            <label for="male">M</label>
+            <input name="gender" type="radio" id="female" value="female" />
+            <label for="female">V</label>
+            <input name="gender" type="radio" id="n" value="n" />
+            <label for="n">Unspecified</label>
+            <input name="gender" type="radio" id="p" value="p" />
+            <label for="p">Undisclosed</label>
+          </p>
+          <p>
+            <label for="question">Question:</label>
+            <textarea name="question" id="question"></textarea>
+          </p>
+          <p>
+            <label>Upload your file:</label>
+            <input type="file" name="recipe" id="recipe" />
+          </p>
+          <button type="reset">Reset</button>
+          <button type="submit">Submit</button>
+          <label>URL</label>
+          <input type="url" name="url" />
+        </form>
+      </main>
+      <footer class="footer">
+        <img src="/css/img/LOGOME.png" /> <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+      </footer>
+    </article>
+  </body>
+</html>
