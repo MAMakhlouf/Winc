@@ -1,1 +1,14 @@
-/*# sourceMappingURL=styles.css.map */
+.container {
+  background: #c3cfe2;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr 1fr 1fr;
+  text-align: center;
+}
+.container__text {
+  background: #fff;
+}
+.container__profpic {
+  width: 250px;
+  height: 290px;
+}/*# sourceMappingURL=styles.css.map */
