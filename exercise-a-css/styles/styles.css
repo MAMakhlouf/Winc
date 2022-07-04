@@ -1,6 +1,9 @@
+body {
+  background: #c3cfe2;
+}
+
 .container {
   font-family: Arial, Helvetica, sans-serif;
-  background: #c3cfe2;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -8,12 +11,12 @@
   text-align: center;
   width: 1000px;
   height: 1500px;
+  border: 1px lightgray solid;
+  border-radius: 100px;
 }
 .container .text {
   background: #fff;
   grid-area: "t";
-  border: 1px lightgray solid;
-  border-radius: 25px;
 }
 .container .profpic {
   grid-area: "p";
