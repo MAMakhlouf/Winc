@@ -1,45 +1,53 @@
-body {
-  background: #c3cfe2;
-}
 .container {
+  background: #c3cfe2;
   font-family: Arial, Helvetica, sans-serif;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: auto;
+  grid-template-rows: 800px auto auto;
   grid-template-areas:
     "t"
     "p"
     "f";
+  margin-left: 600px;
+  width: 600px;
   text-align: center;
-  width: 1000px;
-  height: 1500px;
-  border: 1px lightgray solid;
-  border-radius: 100px;
+  border: 3px lightgray solid;
+  border-radius: 25px;
+
   .text {
     background: #fff;
+    color: grey;
     grid-area: "t";
+    padding: 50px 50px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    line-height: 70px;
+    text-align: left;
   }
   .profpic {
     grid-area: "p";
     width: 190px;
     height: 190px;
     justify-self: center;
-    margin-top: 0;
+    margin-top: -350px;
     img {
       width: 100%;
       height: 100%;
       border: 8px white solid;
       border-radius: 500px;
-      margin-bottom: -600px;
       position: relative;
     }
   }
   .footer {
     background: #686de0;
-    padding-top: 200px;
+    margin-top: -250px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+
     .name {
       color: #fff;
       font-weight: normal;
+      padding-top: 100px;
     }
     .web {
       color: lightgray;
