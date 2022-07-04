@@ -1,15 +1,16 @@
 .container {
-    background: #c3cfe2;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr 1fr 1fr 1fr;
-    text-align: center;
-  
-    &__text {
-      background: #fff;
-    }
-    &__profpic  {
-      width: 250px;
-      height: 290px;
-    }
+  background: #c3cfe2;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr 1fr 1fr;
+  text-align: center;
+  width: 1000px;
+  height: 1500px;
+  &__text {
+    background: #fff;
   }
+  &__profpic {
+    width: 250px;
+    height: 290px;
+  }
+}
