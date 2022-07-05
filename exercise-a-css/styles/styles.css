@@ -62,19 +62,31 @@ body {
 }
 
 /*END PART 1 */
-.container2 {
-  background: #c3cfe2;
+.grid {
   margin-top: 20px;
+  width: 600px;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-row: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "1" "2" "3" "4" "5" "6";
   text-align: center;
 }
-.container2 div {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.grid--item {
+  width: 100%;
+  margin: 10px;
 }
-.container2 div ul {
-  list-style: none;
+.grid--item img {
+  border-radius: 25px;
+  width: 100%;
+  height: 100%;
+}
+.grid--item img:hover {
+  background: gray;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s 2s, opacity 500ms linear;
+  transition: visibility 0s 2s, opacity 500ms linear;
+}
+.grid--item button {
+  width: 100px;
 }/*# sourceMappingURL=styles.css.map */
