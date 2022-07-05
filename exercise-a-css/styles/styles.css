@@ -1,15 +1,14 @@
-
 body {
   background: #c3cfe2;
 }
+
 .container {
   font-family: Arial, Helvetica, sans-serif;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 800px auto auto;
+  grid-template-rows: 800px;
   grid-template-areas: "t" "p" "f";
   margin-top: 20px;
-  margin-left: 600px;
   width: 600px;
   text-align: center;
   border: 1px gray solid;
@@ -21,7 +20,7 @@ body {
   background: #fff;
   grid-area: "t";
   padding: 15px 70px;
-  border-radius: 25px;
+  border-radius: 40px;
   line-height: 65px;
   text-align: left;
 }
@@ -46,8 +45,6 @@ body {
 .container .footer {
   background: #686de0;
   margin-top: -250px;
-  border-bottom-left-radius: 19px;
-  border-bottom-right-radius: 19px;
   letter-spacing: 2px;
   font-size: 120%;
 }
@@ -60,4 +57,9 @@ body {
   color: lightgrey;
   opacity: 0.6;
   font-weight: normal;
+}
+
+/*END PART 1 */
+.container2 {
+  background: #c3cfe2;
 }/*# sourceMappingURL=styles.css.map */

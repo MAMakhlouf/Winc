@@ -1,67 +1,9 @@
-@import "/exercise-a-css/styles/variables";
+@import "./variables";
 
 body {
   background: #c3cfe2;
 }
-.container {
-  font-family: Arial, Helvetica, sans-serif;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 800px;
-  grid-template-areas:
-    "t"
-    "p"
-    "f";
-  margin-top: 20px;
-  width: 600px;
-  text-align: center;
-  border: 1px $color-gray solid;
-  border-radius: 25px;
-  box-shadow: 2px 5px 5px 2px $color-gray;
-
-  .text {
-    background: $color-white;
-    grid-area: "t";
-    padding: 15px 70px;
-    border-radius: 40px;
-    line-height: 65px;
-    text-align: left;
-    h1 {
-      opacity: 0.6;
-      font-size: 160%;
-    }
-  }
-  .profpic {
-    grid-area: "p";
-    width: 190px;
-    height: 190px;
-    justify-self: center;
-    margin-top: -350px;
-    img {
-      width: 100%;
-      height: 100%;
-      border: 8px $color-white solid;
-      border-radius: 500px;
-      position: relative;
-    }
-  }
-  .footer {
-    background: #686de0;
-    margin-top: -250px;
-    letter-spacing: 2px;
-    font-size: 120%;
-    .name {
-      color: $color-white;
-      font-weight: normal;
-      padding-top: 100px;
-    }
-    .web {
-      color: lightgrey;
-      opacity: 0.6;
-      font-weight: normal;
-    }
-  }
-}
+@import "./part1";
 /*END PART 1 */
 .container2 {
   background: #c3cfe2;
