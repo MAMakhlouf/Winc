@@ -7,13 +7,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 800px auto auto;
+  grid-template-rows: 800px;
   grid-template-areas:
     "t"
     "p"
     "f";
   margin-top: 20px;
-  margin-left: 600px;
   width: 600px;
   text-align: center;
   border: 1px $color-gray solid;
@@ -62,4 +61,8 @@ body {
       font-weight: normal;
     }
   }
+}
+/*END PART 1 */
+.container2 {
+  background: #c3cfe2;
 }
