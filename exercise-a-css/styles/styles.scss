@@ -9,7 +9,14 @@ body {
   background: #c3cfe2;
   margin-top: 20px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
-  
+  text-align: center;
+  div{
+    display: inline-flex;
+    
+    ul{
+      list-style: none;
+    }
+  }
 }
