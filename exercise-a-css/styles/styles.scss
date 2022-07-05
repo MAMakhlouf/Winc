@@ -7,4 +7,9 @@ body {
 /*END PART 1 */
 .container2 {
   background: #c3cfe2;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  
 }
