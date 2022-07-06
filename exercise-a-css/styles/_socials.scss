@@ -1,0 +1,39 @@
+.container3 {
+  display: flex;
+  flex-direction: column;
+  font-size: xx-large;
+  align-items: end;
+  i {
+    transition: width 500ms ease-out;
+    text-align: left;
+    overflow: hidden;
+    a {
+      font-size: small;
+      text-decoration: none;
+      color: $color-white;
+    }
+    &:hover {
+      width: 20%;
+    }
+  }
+  .fa-twitter::before {
+    content: "\f099";
+
+    color: $color-white;
+  }
+  .fa-linkedin-in::before {
+    content: "\f0e1";
+
+    color: $color-white;
+  }
+  .fa-facebook-f::before {
+    content: "\f39e";
+
+    color: $color-white;
+  }
+  .fa-github::before {
+    content: "\f09b";
+
+    color: $color-white;
+  }
+}

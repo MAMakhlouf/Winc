@@ -1,6 +1,7 @@
 body {
   background: #c3cfe2;
-  max-width: 600px;
+  margin: 0;
+  width: 100%;
 }
 
 .container {
@@ -9,7 +10,7 @@ body {
   grid-template-columns: auto;
   grid-template-rows: 800px;
   grid-template-areas: "t" "p" "f";
-  margin-top: 20px;
+  margin: 10px;
   width: 600px;
   text-align: center;
   border: 1px gray solid;
@@ -101,22 +102,58 @@ body {
 }
 
 /*END PART 2*/
+.container3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: xx-large;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+.container3 i {
+  -webkit-transition: width 500ms ease-out;
+  transition: width 500ms ease-out;
+  text-align: left;
+  overflow: hidden;
+}
+.container3 i a {
+  font-size: small;
+  text-decoration: none;
+  color: #fff;
+}
+.container3 i:hover {
+  width: 20%;
+}
+.container3 .fa-twitter::before {
+  content: "\f099";
+  color: #fff;
+}
+.container3 .fa-linkedin-in::before {
+  content: "\f0e1";
+  color: #fff;
+}
+.container3 .fa-facebook-f::before {
+  content: "\f39e";
+  color: #fff;
+}
+.container3 .fa-github::before {
+  content: "\f09b";
+  color: #fff;
+}
+
 /*MEDIAQUERY'S*/
 @media screen and (min-width: 768px) {
-  body {
-    max-width: 768px;
-  }
-
   .grid {
     grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
   }
 }
 @media screen and (min-width: 1200px) {
-  body {
-    max-width: 1920px;
-  }
-
   .grid {
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: auto auto auto auto;
