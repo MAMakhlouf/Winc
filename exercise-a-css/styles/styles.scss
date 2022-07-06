@@ -7,13 +7,29 @@ body {
 @import "./part1";
 /*END PART 1 */
 @import "./part2";
+/*END PART 2*/
 
+
+
+
+
+
+/*MEDIAQUERY'S*/
 @media screen and (min-width: 768px) {
   body {
     max-width: 768px;
   }
   .grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body {
+    max-width: 1920px;
+  }
+  .grid {
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto auto auto auto;
   }
 }
