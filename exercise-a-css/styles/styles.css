@@ -1,5 +1,6 @@
 body {
   background: #c3cfe2;
+  max-width: 600px;
 }
 
 .container {
@@ -63,12 +64,11 @@ body {
 
 /*END PART 1 */
 .grid {
+  font-family: Arial, Helvetica, sans-serif;
   margin-top: 20px;
-  width: 600px;
   display: grid;
   grid-template-columns: 1fr;
-  grid-row: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: "1" "2" "3" "4" "5" "6";
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   text-align: center;
 }
 .grid--item {
@@ -97,4 +97,16 @@ body {
   top: 50%;
   left: 40%;
   z-index: 1;
+  font-weight: bolder;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    max-width: 768px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
 }/*# sourceMappingURL=styles.css.map */
