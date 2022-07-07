@@ -3,21 +3,20 @@
   flex-direction: column;
   font-size: xx-large;
   align-items: end;
+
   i {
     transition: width 500ms ease-out;
     text-align: left;
     overflow: hidden;
+
     a {
       font-size: small;
       text-decoration: none;
       color: $color-white;
+      position: relative;
     }
     &:hover {
       width: 20%;
-      &::after {
-        
-        font-size: normal;
-      }
     }
   }
   .fa-twitter::before {
@@ -39,5 +38,37 @@
     content: "\f09b";
 
     color: $color-white;
+  }
+}
+.social-links {
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  bottom: 180px;
+  font-size: 32px;
+  z-index: 3;
+
+  .social-list {
+    list-style-type: none;
+    line-height: 32px;
+
+    .social-items {
+      align-items: center;
+      transition: width 500ms ease-out;
+      overflow: hidden;
+      text-align: right;
+
+      a {
+        text-decoration: none;
+        color: $color-white;
+        &:hover {
+          width: 200px;
+          &::after {
+            content: "Follow me";
+            color: $color-white;
+          }
+        }
+      }
+    }
   }
 }

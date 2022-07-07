@@ -125,12 +125,10 @@ body {
   font-size: small;
   text-decoration: none;
   color: #fff;
+  position: relative;
 }
 .container3 i:hover {
   width: 20%;
-}
-.container3 i:hover::after {
-  font-size: normal;
 }
 .container3 .fa-twitter::before {
   content: "\f099";
@@ -146,6 +144,43 @@ body {
 }
 .container3 .fa-github::before {
   content: "\f09b";
+  color: #fff;
+}
+
+.social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: sticky;
+  bottom: 180px;
+  font-size: 32px;
+  z-index: 3;
+}
+.social-links .social-list {
+  list-style-type: none;
+  line-height: 32px;
+}
+.social-links .social-list .social-items {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: width 500ms ease-out;
+  transition: width 500ms ease-out;
+  overflow: hidden;
+  text-align: right;
+}
+.social-links .social-list .social-items a {
+  text-decoration: none;
+  color: #fff;
+}
+.social-links .social-list .social-items a:hover {
+  width: 200px;
+}
+.social-links .social-list .social-items a:hover::after {
+  content: "Follow me";
   color: #fff;
 }
 
