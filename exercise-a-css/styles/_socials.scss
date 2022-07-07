@@ -14,6 +14,10 @@
     }
     &:hover {
       width: 20%;
+      &::after {
+        
+        font-size: normal;
+      }
     }
   }
   .fa-twitter::before {

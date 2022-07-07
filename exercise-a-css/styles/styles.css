@@ -129,6 +129,9 @@ body {
 .container3 i:hover {
   width: 20%;
 }
+.container3 i:hover::after {
+  font-size: normal;
+}
 .container3 .fa-twitter::before {
   content: "\f099";
   color: #fff;
