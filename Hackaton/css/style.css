@@ -28,8 +28,8 @@ a:active {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: x-large;
-  padding: 10px 10%;
+  font-size: large;
+  padding: 15px 10%;
 }
 
 img {
@@ -75,6 +75,7 @@ form {
     justify-content: space-between;
     text-align: center;
     padding-right: 40px;
+    font-size: x-large;
   }
   .main {
     grid-column: 2/-1;
