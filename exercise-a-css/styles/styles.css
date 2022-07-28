@@ -11,7 +11,7 @@ body {
   grid-template-rows: 800px;
   grid-template-areas: "t" "p" "f";
   margin: 10px;
-  width: 600px;
+  max-width: 600px;
   text-align: center;
   border: 1px gray solid;
   border-radius: 25px;
@@ -114,6 +114,7 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
+  white-space: nowrap;
 }
 .container3 i {
   -webkit-transition: width 500ms ease-out;
@@ -126,6 +127,7 @@ body {
   text-decoration: none;
   color: #fff;
   position: relative;
+  padding-left: 200px;
 }
 .container3 i:hover {
   width: 20%;

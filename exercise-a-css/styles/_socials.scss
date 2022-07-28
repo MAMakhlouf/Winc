@@ -3,6 +3,7 @@
   flex-direction: column;
   font-size: xx-large;
   align-items: end;
+  white-space: nowrap;
 
   i {
     transition: width 500ms ease-out;
@@ -14,6 +15,7 @@
       text-decoration: none;
       color: $color-white;
       position: relative;
+      padding-left: 200px;
     }
     &:hover {
       width: 20%;

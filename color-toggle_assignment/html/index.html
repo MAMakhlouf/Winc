@@ -11,24 +11,19 @@
 
 <body>
     <nav class="nav-main">
-        <div class="btn-toggle-nav" onclick="toggleNav()"></div>
-        <ul>
-            <li><a href="#">Red</a></li>
-            <li><a href="#">Blue</a></li>
-            <li><a href="#">White</a></li>
-            <li><a href="#">Yellow</a></li>
-        </ul>
+        <div class="btn-toggle-nav" onmouseover="toggleNav()" onmouseout="toggleNav()"></div>
     </nav>
-    <aside class="nav-sidebar">
+    <aside class="nav-sidebar" onmouseover="toggleNav()" onmouseout="toggleNav()">
         <ul>
-            <li><span>Pick your color and see what happens</span></li>
-            <li><a href="#">Red</a></li>
-            <li><a href="#">Blue</a></li>
-            <li><a href="#">White</a></li>
-            <li><a href="#">Yellow</a></li>
+            <li class="nav-title" style="background-color: #1b1b1b;"><span>Pick your color and see what happens</span>
+            </li>
+            <li class="white" style="background-color: white ;"><a class="white" href="#">White</a></li>
+            <li class="red"><a class="red" href="#" style="background-color: red;">Red</a></li>
+            <li class="blue"><a class="blue" href="#" style="background-color: blue;">Blue</a></li>
+            <li class="yellow"><a class="yellow" href="#" style="background-color: yellow;">Yellow</a></li>
         </ul>
     </aside>
 </body>
-<script src="/color-toggle_assignment/script/script.js"></script>
+<script defer src="/color-toggle_assignment/script/script.js"></script>
 
 </html>
