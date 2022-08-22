@@ -29,3 +29,10 @@ let toggleNav = function () {
     toggleNavStatus = false;
   }
 };
+
+const col = document.getElementsByTagName('body');
+
+const white = document.getElementById('white');
+white.addEventListener('click', function onClick() {
+
+})
