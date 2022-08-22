@@ -48,4 +48,6 @@ yellow.addEventListener("click", function () {
 });
 
 const navbar = document.getElementById("nav");
-navbar.addEventListener(function () {});
+navbar.addEventListener("click", function () {
+  navbar.style.visibility = "hidden";
+});
