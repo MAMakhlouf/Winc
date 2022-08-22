@@ -46,3 +46,5 @@ const yellow = document.getElementById("yellow");
 yellow.addEventListener("click", function onClick() {
   document.body.style.backgroundColor = "yellow";
 });
+
+let navbar = document.getElementsByClassName("nav-sidebar");
