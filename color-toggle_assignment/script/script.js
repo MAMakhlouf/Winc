@@ -30,9 +30,19 @@ let toggleNav = function () {
   }
 };
 
-const col = document.getElementsByTagName('body');
-
-const white = document.getElementById('white');
-white.addEventListener('click', function onClick() {
-
-})
+const white = document.getElementById("white");
+white.addEventListener("click", function onClick() {
+  document.body.style.backgroundColor = "white";
+});
+const red = document.getElementById("red");
+red.addEventListener("click", function onClick() {
+  document.body.style.backgroundColor = "red";
+});
+const blue = document.getElementById("blue");
+blue.addEventListener("click", function onClick() {
+  document.body.style.backgroundColor = "blue";
+});
+const yellow = document.getElementById("yellow");
+yellow.addEventListener("click", function onClick() {
+  document.body.style.backgroundColor = "yellow";
+});
