@@ -56,18 +56,6 @@ body {
         font-weight: bolder;
         white-space: nowrap;
         transition: all 300ms ease-in-out;
-        // .white {
-        //   transition: all 350ms ease-in-out;
-        // }
-        // .red {
-        //   transition: all 400ms ease-in-out;
-        // }
-        // .blue {
-        //   transition: all 450ms ease-in-out;
-        // }
-        // .yellow {
-        //   transition: all 500ms ease-in-out;
-        // }
         &:hover {
           border: 4px solid black;
         }
