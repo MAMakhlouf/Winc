@@ -31,20 +31,21 @@ let toggleNav = function () {
 };
 
 const white = document.getElementById("white");
-white.addEventListener("click", function onClick() {
+white.addEventListener("click", function () {
   document.body.style.backgroundColor = "white";
 });
 const red = document.getElementById("red");
-red.addEventListener("click", function onClick() {
+red.addEventListener("click", function () {
   document.body.style.backgroundColor = "red";
 });
 const blue = document.getElementById("blue");
-blue.addEventListener("click", function onClick() {
+blue.addEventListener("click", function () {
   document.body.style.backgroundColor = "blue";
 });
 const yellow = document.getElementById("yellow");
-yellow.addEventListener("click", function onClick() {
+yellow.addEventListener("click", function () {
   document.body.style.backgroundColor = "yellow";
 });
 
-let navbar = document.getElementsByClassName("nav-sidebar");
+const navbar = document.getElementById("nav");
+navbar.addEventListener(function () {});
