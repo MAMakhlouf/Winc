@@ -205,7 +205,7 @@ let movies = [
     imdbID: "tt4116284",
     type: "movie",
     poster:
-      "https://m.media-amazon.com/images/M/MV5BMTcyNTEyOTY0M15BMl5BabbnBnXkFtZTgwOTAyNzU3MDI@._V1_SX300.jpg",
+      "https://m.media-amazon.com/images/M/MV5BMTcyNTEyOTY0M15BMl5BanBnXkFtZTgwOTAyNzU3MDI@._V1_SX300.jpg",
   },
   {
     title: "Batman: The Animated Series",
@@ -280,3 +280,4 @@ let movies = [
       "https://m.media-amazon.com/images/M/MV5BOTdkYjA4YzAtMjNiZS00OTgyLTg5Y2ItNGIwZGQyMTUzNzFiXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg",
   },
 ];
+
