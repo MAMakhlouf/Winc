@@ -1,5 +1,6 @@
-//Roept 
+//Roept UL element via de DOM
 const moviesList = document.getElementById("container-list");
+//Voor het gemak van uittyppen URL deze const aangemaakt
 const imdbUrl = "https://www.imdb.com/title/";
 
 //maakt daadwerkelijk een list element van de gegeven film
@@ -17,7 +18,7 @@ function createItem(movie) {
 }
 
 // Pakt films uit de database en maakt voor elke een list element in de container
-function addMoviesToDom(movies) {
+function addMoviesToDom(movie) {
   const items = movies.map(createItem);
 
   items.forEach((item) => {
