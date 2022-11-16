@@ -27,3 +27,7 @@ function addMoviesToDom(movies) {
 }
 
 addMoviesToDom(movies);
+
+// Selecteer alle radiobuttons
+const filmFilters = document.getElementsByName("film-filter");
+
