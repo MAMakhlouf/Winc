@@ -1,5 +1,5 @@
-//
-const moviesList = document.getElementById("container");
+//Roept 
+const moviesList = document.getElementById("container-list");
 const imdbUrl = "https://www.imdb.com/title/";
 
 //maakt daadwerkelijk een list element van de gegeven film
