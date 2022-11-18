@@ -29,7 +29,11 @@ function addMoviesToDom(movies) {
 addMoviesToDom(movies);
 
 // Selecteer alle radiobuttons
-const filmFilters = document.getElementsByName("film-filter");
+const filmFilters = document.querySelectorAll('[name = "film-filter"');
 
+//Connect een eventlistener aan elke radio button (dit kan ook door bovenstaande aan te passen naar een Array maar deze manier vond ik makkelijker en duidelijker)
+filmFilters.forEach((radioButton) => {
+  radioButton.addEventListener("change", handleOnChangeEvent);
+});
 
-
+//Onderstaande functie bepaalt vervolgstap van bovenstaande eventlisteners
