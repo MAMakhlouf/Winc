@@ -36,24 +36,4 @@ filmFilters.forEach((radioButton) => {
   radioButton.addEventListener("change", handleOnChangeEvent);
 });
 
-//Onderstaande functie bepaalt vervolgstap van bovenstaande eventlisteners
-function handleOnChangeEvent(event) {
-  const value = event.target.value.toLowerCase();
-  switch (value) {
-    case "latest":
-      filterLatestMovies();
-      break;
-    case "avenger":
-      filterMovies("avenger");
-      break;
-    case "x-men":
-      filterMovies("x-men");
-      break;
-    case "princess":
-      filterMovies("princess");
-      break;
-    case "batman":
-      filterMovies("batman");
-      break;
-  }
-}
+
