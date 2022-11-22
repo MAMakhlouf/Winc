@@ -34,7 +34,6 @@ const filmFilters = document.querySelectorAll('[name = "film-filter"');
 
 //Connect een eventlistener aan elke radio button (dit kan ook door bovenstaande aan te passen naar een Array maar deze manier vond ik makkelijker en duidelijker)
 filmFilters.forEach((radioButton) => {
-  radioButton.addEventListener("change", handleOnChangeEvent);
+  console.log(radioButton);
+  radioButton.addEventListener("change", handleOnChangeEvent(event));
 });
-
-
