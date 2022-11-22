@@ -34,10 +34,35 @@ const filmFilters = document.querySelectorAll('[name = "film-filter"');
 
 //Connect een eventlistener aan elke radio button (dit kan ook door bovenstaande aan te passen naar een Array maar deze manier vond ik makkelijker en duidelijker)
 filmFilters.forEach((radioButton) => {
-  console.log(radioButton);
-  radioButton.addEventListener("change", function (event) {
+  radioButton.addEventListener("change", function handleOnChangeEvent(event) {
     const clickedRadioButton = event.target.value;
     handleOnChangeEvent(clickedRadioButton);
+    console.log(radioButton); // Laat in de console zien of eventlisteners correct zijn toegevoegd
   });
 });
-
+//Onderstaande functie verwerkt het change event met een vervolgstap.
+function handleOnChangeEvent(event) {
+  console.log(event.target.value);
+  switch (event.target.value) {
+    case "latest":
+      message = "laatste films,2014 of nieuwer";
+      console.log("Hi ik ben van", message);
+      break;
+    case "avenger":
+      message = "Avengers films";
+      console.log("Hi ik ben van", message);
+      break;
+    case "x-men":
+      message = "X-men films";
+      console.log("Hi ik ben van", message);
+      break;
+    case "princess":
+      message = "Princess films";
+      console.log("Hi ik ben van", message);
+      break;
+    case "batman":
+      message = "Batman films";
+      console.log("Hi ik ben van", message);
+      break;
+  }
+}
