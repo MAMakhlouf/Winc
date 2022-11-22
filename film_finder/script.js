@@ -26,6 +26,7 @@ function addMoviesToDom(movies) {
   });
 }
 
+//roept de functie aan
 addMoviesToDom(movies);
 
 // Selecteer alle radiobuttons
