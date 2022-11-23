@@ -39,6 +39,7 @@ filmFilters.forEach((radioButton) => {
 //Onderstaande functie verwerkt het change event met een vervolgstap.
 function handleOnChangeEvent(event) {
   console.log(event.target.value);
+  //vervolgstap van het change event om de films te filteren.
   switch (event.target.value) {
     case "latest":
       message = "laatste films,2014 of nieuwer";
@@ -59,6 +60,9 @@ function handleOnChangeEvent(event) {
     case "batman":
       message = "Batman films";
       console.log("Hi ik ben van", message);
+      filterMovies("Batman");
       break;
   }
 }
+
+function filterMovies(wordInMovie) {}
