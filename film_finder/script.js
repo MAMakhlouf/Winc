@@ -29,6 +29,7 @@ function addMoviesToDom(movies) {
 //roept de functie aan
 addMoviesToDom(movies);
 
+//leegmaken van de Ul om Li's toe te voegen
 function clearUl() {
   while (moviesList.firstChild) {
     moviesList.removeChild(moviesList.firstChild);
@@ -88,6 +89,7 @@ function handleOnChangeEvent(event) {
       break;
   }
 }
+//change event om nieuwe films naar de dom te sturen
 const latestMovieBtn = document.querySelector("#latest");
 latestMovieBtn.addEventListener("change", (e) => {
   const latestMovies = movies.filter((movie) => {
