@@ -98,3 +98,4 @@ latestMovieBtn.addEventListener("change", (e) => {
   clearUl();
   addMoviesToDom(latestMovies);
 });
+
