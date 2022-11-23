@@ -29,6 +29,11 @@ function addMoviesToDom(movies) {
 //roept de functie aan
 addMoviesToDom(movies);
 
+function clearUl() {
+  while (moviesList.firstChild) {
+    moviesList.removeChild(moviesList.firstChild);
+  }
+}
 // Selecteer alle radiobuttons
 const filmFilters = document.querySelectorAll('[name = "film-filter"]');
 
@@ -48,23 +53,38 @@ function handleOnChangeEvent(event) {
     case "avenger":
       message = "Avengers films";
       console.log("Hi ik ben van", message);
+      const avengerMovies = movies.filter((movie) =>
+        movie.title.includes("Avenger")
+      );
+      clearUl();
+      addMoviesToDom(avengerMovies);
       break;
     case "x-men":
       message = "X-men films";
       console.log("Hi ik ben van", message);
+      const xmenMovies = movies.filter((movie) =>
+        movie.title.includes("X-Men")
+      );
+      clearUl();
+      addMoviesToDom(xmenMovies);
       break;
     case "princess":
       message = "Princess films";
       console.log("Hi ik ben van", message);
+      const princessMovies = movies.filter((movie) =>
+        movie.title.includes("Princess")
+      );
+      clearUl();
+      addMoviesToDom(princessMovies);
       break;
     case "batman":
       message = "Batman films";
       console.log("Hi ik ben van", message);
-      filterMovies("Batman");
+      const batmanMovies = movies.filter((movie) =>
+        movie.title.includes("Batman")
+      );
+      clearUl();
+      addMoviesToDom(batmanMovies);
       break;
   }
-}
-
-function filterMovies(wordInMovie) {
-  
 }
