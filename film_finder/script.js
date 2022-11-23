@@ -65,4 +65,6 @@ function handleOnChangeEvent(event) {
   }
 }
 
-function filterMovies(wordInMovie) {}
+function filterMovies(wordInMovie) {
+  
+}
