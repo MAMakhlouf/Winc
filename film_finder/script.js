@@ -88,3 +88,11 @@ function handleOnChangeEvent(event) {
       break;
   }
 }
+const latestMovieBtn = document.querySelector("#latest");
+latestMovieBtn.addEventListener("change", (e) => {
+  const latestMovies = movies.filter((movie) => {
+    return movie.year == "2014", movie.year > "2014";
+  });
+  clearUl();
+  addMoviesToDom(latestMovies);
+});
